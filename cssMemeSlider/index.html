@@ -4,35 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
     <div class="slider">
-      <div class="slider__wriper">
-        <div class="slider__item"><img src="./assets/1.jpg" alt="slide1" class="sider__img"></div>
-        <div class="slider__item"><img src="./assets/2.jpg" alt="slide2" class="sider__img"></div>
-        <div class="slider__item"><img src="./assets/3.jpg" alt="slide3" class="sider__img"></div>
-        <div class="slider__item"><img src="./assets/4.jpg" alt="slide4" class="sider__img"></div>
+      <div class="slider__wrapper">
+        <input type="radio" name="dot" id="q1" checked>
+        <input type="radio" name="dot" id="q2">
+        <input type="radio" name="dot" id="q3">
+        <input type="radio" name="dot" id="q4">
+
+        <div class="slider__item img_1"><img src="./assets/1.jpg" alt="slide1" class="slider__img"></div>
+        <div class="slider__item img_2"><img src="./assets/2.jpg" alt="slide2" class="slider__img"></div>
+        <div class="slider__item img_3"><img src="./assets/3.jpg" alt="slide3" class="slider__img"></div>
+        <div class="slider__item img_4"><img src="./assets/4.jpg" alt="slide4" class="slider__img"></div>
       </div>
 
-      <div class="slder__descr">
-        <div class="slider__descr_text">Правильно левиОса...</div>
-        <div class="slider__descr_text">В конце каждого семестра:</div>
-        <div class="slider__descr_text">Научишь?</div>
-        <div class="slider__descr_text">"Любимый" препод</div>
+      <div class="slider__bottom">
+        <div class="slider__descr">
+          <div class="slider__descr_text text_1">Правильно левиОса...</div>
+          <div class="slider__descr_text text_2">В конце каждого семестра:</div>
+          <div class="slider__descr_text text_3">Научишь?</div>
+          <div class="slider__descr_text text_4">"Любимый" препод</div>
+        </div>
+  
+        <div class="slider__paginaion">
+          <label for="q1" class="slider__dot dot_1"><span class="slider__dot_img"></span></label>
+          <label for="q2" class="slider__dot dot_2"><span class="slider__dot_img"></span></label>
+          <label for="q3" class="slider__dot dot_3"><span class="slider__dot_img"></span></label>
+          <label for="q4" class="slider__dot dot_4"><span class="slider__dot_img"></span></label>
+        </div>
       </div>
-
-      <div class="slider__paginaion">
-        <div class="pagination__wrapper"><label for="1"></label></div>
-        <div class="pagination__wrapper"><label for="2"></label></div>
-        <div class="pagination__wrapper"><label for="3"></label></div>
-        <div class="pagination__wrapper"><label for="4"></label></div>
-      </div>
-
-      <input type="radio" name="dot" id="1">
-      <input type="radio" name="dot" id="2">
-      <input type="radio" name="dot" id="3">
-      <input type="radio" name="dot" id="4">
     </div>
   </main>
 </body>
