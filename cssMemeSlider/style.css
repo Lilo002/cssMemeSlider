@@ -173,7 +173,7 @@ input {
   border: 0.2rem solid rgb(255, 181, 230);
 }
 
-@media(min-width:900px) {
+@media(max-width:900px) {
   .slider__bottom {
     flex-direction: column;
     height: 10vh;
