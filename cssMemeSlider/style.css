@@ -44,7 +44,7 @@ input {
 }
 
 .slider__descr {
-  width: 50%;
+  width: 70%;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -54,6 +54,9 @@ input {
   min-width: 100%;
   transition: all 0.7s;
   opacity: 0;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .slider__paginaion {
@@ -173,7 +176,10 @@ input {
   border: 0.2rem solid rgb(255, 181, 230);
 }
 
-@media(max-width:900px) {
+@media(max-width:950px) {
+  .slider {
+    width: 70%;
+  }
   .slider__bottom {
     flex-direction: column;
     height: 10vh;
@@ -181,6 +187,10 @@ input {
   .slider__descr {
     order: 2;
     align-self: flex-start;
+    width: 100%;
+  }
+  .slider__descr_text {
+    font-size: 1.5rem;
   }
 }
 
